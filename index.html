@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>App Web Identificador de Sons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+   
+    <link href="https://teachablemachine.withgoogle.com/models/mia44Ao2w"/>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  
+  <body>
+    <div class="col-xs-12 header_div text-center">
+    <h2>Alienígenas controlados por som</h2>
+    <p>observação: Reproduza diferentes sons, como: palmas, chocalho e bater na mesa para fazer os alienigenas dançarem</p>
+    </div>
+    <div class="main_div">
+    <center>
+      <br>
+      <button class="btn btn-warning" onclick="startClassification();">INICIAR</button>
+      <h3 id="result_label">posso ouvir - </h3>
+      <h4 id="result_confidence">precisão - </h4>
+      <br>
+      <img src="download (10).jpeg" id="alien1" width="300" height="300">
+      <img src="download (11).jpeg" id="alien2" width="300" height="300">
+      <img src="download (12).jpeg" id="alien3" width="300" height="300">
+    </center>
+</div>
+<div class="copy_right_footer">
+  Desenvolvido por - Bernardo
+</div>
+<script src="main.js"></script>
+  </body>
+</html>
